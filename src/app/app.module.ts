@@ -7,19 +7,22 @@ import { AppComponent } from './app.component';
 import { AppNavbarComponent } from './app-navbar/app-navbar.component';
 import { MonitorComponent } from './monitor/monitor.component';
 import { Configuration } from './monitor/monitor.service';
+import { TesteGraficoComponent } from './teste-grafico/teste-grafico.component';
+import { ConfigurationProduto } from './teste-grafico/produto.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppNavbarComponent,
-    MonitorComponent
+    MonitorComponent,
+    TesteGraficoComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule
   ],
-  providers: [Configuration],
+  providers: [Configuration, ConfigurationProduto],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
